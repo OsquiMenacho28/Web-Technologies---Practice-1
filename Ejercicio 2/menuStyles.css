@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navigation-menu {
+    background-color: darkslategray;
+    color: white;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu {
+    background-color: white;
+    text-align: left;
+    display: none;
+}
+
+.dropdown-button {
+    float: left;
+    margin: 8px;
+    text-align: center;
+}
+
+.dropdown-button:hover {
+    border-bottom: 3px solid skyblue;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    color: black;
+    margin: 5px;
+    border: 1px solid white;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(238, 235, 235);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.dropdown-item:active {
+    background-color: aqua;
+}
