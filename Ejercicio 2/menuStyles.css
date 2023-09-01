@@ -1,3 +1,7 @@
+body {
+    background-color: lavender;
+}
+
 h1 {
     text-align: center;
 }
@@ -27,6 +31,7 @@ ul {
     float: left;
     margin: 8px;
     text-align: center;
+    margin-inline: 14px;
 }
 
 .dropdown-button:hover {

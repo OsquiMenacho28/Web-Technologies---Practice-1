@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaci&oacute;n de Formulario</title>
+    <link rel="stylesheet" href="formStyles.css">
+</head>
+<body>
+    <div id="message-container">
+        <p>Por favor, a continuaci&oacute;n, ingrese sus datos.</p>
+    </div>
+    <div id="form-container">
+        <h1>FORMULARIO</h1>
+        <form name="userForm" method="post">
+            <label for="userName">Nombre:</label>
+            <input type="text" id="userName" name="userName" autocapitalize="words" placeholder="Ingrese su Nombre">
+            <label for="userEmail">Correo Electr&oacute;nico:</label>
+            <input type="text" id="userEmail" name="userEmail" placeholder="ejemplo@ucb.edu.bo">
+            <label for="userPassword">Contrase&ntilde;a:</label>
+            <input type="password" id="userPassword" name="userPassword" placeholder="Ingrese su Contraseña">
+            <div id="submit-container">
+                <span id="lblMessage"></span>
+                <button type="button" onclick="validate();">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

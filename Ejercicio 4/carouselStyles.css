@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(178, 216, 228);
+}
+
+h1 {
+    text-align: center;
+    font-size: 52px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#carousel-container {
+    background-color: white;
+    max-width: 2000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid aqua;
+}
+
+#carousel-components {
+    display: flex;
+    position: relative;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    display: flex;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.carousel-image-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 38px;
+}
+
+.prev-image-button,
+.next-image-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.prev-image-button:hover,
+.next-image-button:hover {
+    background-color: darkturquoise;
+}
+
+.prev-image-button img,
+.next-image-button img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.prev-image-button {
+    left: 955px;
+}
+
+.next-image-button {
+    right: 955px;
+}
+
+.pass-button {
+    background-color: blue;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 7px;
+    cursor: pointer;
+    outline: none;
+}
+
+.pass-button.active {
+    background-color: white;
+}
+
+#pass-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
